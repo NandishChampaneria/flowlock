@@ -1,0 +1,56 @@
+{
+  "name": "@nandishchampaneria/flowlock",
+  "version": "0.3.0",
+  "description": "Semantic drift detection engine for TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "typescript",
+    "static-analysis",
+    "semantic-drift",
+    "api-compatibility"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NandishChampaneria/flowlock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NandishChampaneria/flowlock/issues"
+  },
+  "homepage": "https://github.com/NandishChampaneria/flowlock#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "flowlock": "dist/cli.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.33",
+    "@vitest/coverage-v8": "^2.0.0",
+    "vitest": "^2.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tmp/
+.flowlock/
+*.log
+.DS_Store
+.env
+.env.*
+coverage/
+.nyc_output/
+*.lcov
+*.tsbuildinfo
